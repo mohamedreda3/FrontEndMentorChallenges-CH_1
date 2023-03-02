@@ -1,0 +1,215 @@
+:root {
+    --bg: rgba(137, 43, 226, 0.429);
+    --common-color-1: #1f1f38;
+    --active-transition: 0.4s ease-in-out;
+    --common-color-2: #45a4da;
+    --common-color-3: #292a63;
+    --glassmorphism-color: #45a3da50;
+    --text-color-1: rgb(255 255 255 / 43%);
+    --text-color-2: #98c6ef;
+    --text-color-3: rgb(128 128 128 / 76%);
+    --common-color-4: #695ee5;
+    --common-color-5: #2b305e;
+    --common-color-6: #f95849;
+    --common-color-7: #272c55;
+    --common-color-8: #00bd8d;
+    --common-color-9: #f5c855;
+    --common-color-10: #414888;
+    --text-color-4: rgb(171 160 160);
+    --text-color-5: rgba(255, 255, 255, 0.679);
+    --common-border-1: 0.1px solid transparent;
+    --common-border-2: 2px solid transparent;
+    --common-border-3: 1px solid transparent;
+
+    /* 
+       #f4f4f4
+       #616fa9
+       #7a7c7c
+       rgba(255, 255, 255, 0.732)
+       rgba(255, 255, 255, 0.679)
+    */
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    position: relative;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+
+a,
+span {
+    display: inline-block;
+}
+
+
+.container {
+    width: min(600px, 100%);
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 1px 1px 10px -2px #2196f330;
+    margin: 17vh auto;
+    border-radius: 41px;
+}
+
+
+.container div {
+    border-radius: 41px;
+    display: grid;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.container .result-pg {
+    background: #695ee5;
+    gap: 18px;
+}
+
+
+.container .summary-pg {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container h5,
+.container p,
+.container h3,
+.container h4,
+.container h3 {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.result-pg h5 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.592);
+    font-weight: 400;
+}
+
+.container .result-pg h4 {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+}
+
+.container .result-pg .result-cnt {
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    background: #695ee5be;
+    border-radius: 200px;
+    box-shadow: 1px 1px 100px -2px #564bcc, 1px 1px 66px -2px #4b3ed9 inset;
+    text-align: center;
+}
+
+.result-cnt h3 {
+    font-size: 48px;
+    color: white;
+}
+
+.result-cnt span {
+    color: rgba(255, 255, 255, 0.592);
+}
+
+.container .result-pg p {
+    text-align: center;
+    width: 75%;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.container .summary-pg {
+    align-content: center;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+
+.summary-pg div {
+    width: 100%;
+    grid-column: span 18;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px;
+    border-radius: 6px;
+    /* box-shadow: 1px 1px 15px -7px grey; */
+    background: #fff6f5;
+}
+
+.summary-pg div span{
+    display: flex;
+    align-items: center;
+}
+
+.summary-pg div:nth-child(2) span:nth-child(1) {
+    color: #e4696c;
+    font-weight: 600;
+}
+
+.summary-pg div span.results span {
+    color: black !important;
+}
+
+.summary-pg div span img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.summary-pg div span.results em {
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.666);
+}
+
+.summary-pg div:nth-child(3) {
+    background: #fffbf2;
+}
+
+.summary-pg div:nth-child(3) span:nth-child(1) {
+    color: #ebb74a;
+    font-weight: 600;
+}
+
+
+.summary-pg div:nth-child(4) {
+    background: #f2fbfa;
+}
+
+.summary-pg div:nth-child(4) span:nth-child(1) {
+    color: #1faf8c;
+    font-weight: 600;
+}
+
+.summary-pg div:nth-child(5) {
+    background: #f3f3fd;
+}
+
+.summary-pg div:nth-child(5) span:nth-child(1) {
+    color: #1f2b97;
+    font-weight: 600;
+}
+
+.summary-pg a {
+    background: #303b59;
+    grid-column: span 18;
+    color: white;
+    border-radius: 100px;
+    padding: 15px;
+    text-align: center;
+    transition: var(--active-transition);
+}
+
+.summary-pg a:hover{
+    background-color: #4c38f2;
+}
+
+.container .summary-pg h4 {
+    font-size: 18px;
+    margin: 23px 0;
+}
